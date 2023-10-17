@@ -38,7 +38,7 @@ app.get("/posts/:topic",function(req,res){
   // console.log(req.params.topic);
 })
 app.get("/",(req,res)=>{
-  res.render(__dirname+"/views/home.ejs",{homeStartingContent:homeStartingContent,content:array});
+  res.render(__dirname+"/views/index.ejs",{homeStartingContent:homeStartingContent,content:array});
 })
 app.get("/about",(req,res)=>{
   res.render(__dirname+"/views/about.ejs",{aboutContent});
